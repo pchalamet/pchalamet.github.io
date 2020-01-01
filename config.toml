@@ -5,7 +5,6 @@ theme = "hyde"
 author = "Pierre Chalamet"
 googleAnalytics = "UA-25006917-1"
 Paginate = 5
-publishDir = "docs"
 
 [markup]
   [markup.highlight]
