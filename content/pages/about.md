@@ -22,7 +22,7 @@ Beside work, I have some OSS projets too:
 * [full-build](http://www.full-build.io): a smart build system for .net
 * [cassandra-sharp](https://github.com/pchalamet/cassandra-sharp) : high performance .net driver for Cassandra
 
-Also I'm happy to contribute back to OSS projects when possible.
+Also I'm happy to contribute back to OSS projects when possible. Also see [GitHub](https://github.com/pchalamet) for more projects.
 
 I used to create demo when I was younger :-) Some of my old demos with [DreamDealers](http://demozoo.org/groups/739/) are available on [GitHub](https://github.com/pchalamet/Dreamdealers).
 
