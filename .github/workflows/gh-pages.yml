@@ -1,3 +1,4 @@
+# from https://github.com/marketplace/actions/hugo-setup
 name: github pages
 
 on:
