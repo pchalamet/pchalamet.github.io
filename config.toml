@@ -19,9 +19,9 @@ Paginate = 5
     {Name = "full-build", URL = "https://www.full-build.io"},
   ]
   social = [
+    { Name = "github-circled", URL = "https://github.com/pchalamet"},
     { Name = "twitter", URL = "https://twitter.com/pierrechalamet"},
     { Name = "linkedin", URL = "https://www.linkedin.com/in/pierrechalamet"},
-    { Name = "github-circled", URL = "https://github.com/pchalamet"},
   ]
 
 #  themeColor = "theme-base-09"
