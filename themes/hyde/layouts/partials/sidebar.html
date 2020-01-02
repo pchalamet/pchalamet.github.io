@@ -13,7 +13,7 @@
 
     <nav>
       <ul class="sidebar-nav">
-        {{ range .Site.Menus.main -}}
+        {{ range .Site.Params.links -}}
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
         {{- end }}
       </ul>
@@ -22,7 +22,7 @@
 
     <div class="social-links">
         <ul>
-            {{ range .Site.Params.social.main -}}
+            {{ range .Site.Params.social -}}
             <li><a href="{{ .URL }}"><span class="icon-{{ .Name }}"></span></a></li>
             {{- end }}
         </ul>
