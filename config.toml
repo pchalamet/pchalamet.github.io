@@ -1,4 +1,4 @@
-baseURL = "https://pierre.chalamet.net"
+baseURL = "https://pierre.chalamet.net/"
 languageCode = "en-us"
 title = "Besides"
 theme = "hyde"
