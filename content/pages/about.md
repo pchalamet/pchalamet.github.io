@@ -18,7 +18,11 @@ My day-to-day job is to manage people and projects and help structure teams. I c
 * Performance
 * Amiga and #demoscene
 
-Beside work, I have some OSS projets too:
+Beside work, I work on some OSS projets too:
+* [fbus](https://github.com/pchalamet/fbus): small and lean .net service-bus for F#/C#
+* [Terrabuild](https://github.com/MagnusOpera): a fast build system for monorepo
+* [Lollipops](https://github.com/MagnusOpera/Lollipops): a plugin container
+* [PresqueYaml](https://github.com/MagnusOpera/PresqueYaml): A Yaml parser and deserializer for F#/C#
 * [full-build](http://www.full-build.io): a smart build system for .net
 * [cassandra-sharp](https://github.com/pchalamet/cassandra-sharp) : high performance .net driver for Cassandra
 
