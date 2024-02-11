@@ -13,10 +13,10 @@ Paginate = 5
 [params]
   description = "dev, thoughts & rock'n roll"
   author = "Pierre Chalamet"
-  avatar = "avatar.jpg"
+  avatar = "pct.png"
   links = [
     {Name = "About", URL = "/pages/about"},
-    {Name = "full-build", URL = "https://www.full-build.io"},
+    {Name = "Magnus Opera", URL = "https://github.com/MagnusOpera"},
   ]
   social = [
     { Name = "github-circled", URL = "https://github.com/pchalamet"},

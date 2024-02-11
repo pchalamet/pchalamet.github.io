@@ -1,3 +1,3 @@
 
 run:
-	hugo server
+	hugo server --buildDrafts

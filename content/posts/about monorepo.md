@@ -58,7 +58,7 @@ So what to do ? Well, your mono-repo must have tools to ensure it's fast, optimi
 
 A mono-repository requires much more work to setup than multi-repositories. But benefits are tremendous.
 
-I learned about mono-repository (or at least unified view of mult-repositories) at [Criteo](https://criteo.com): that was the MOAB (Mother Of All Builds). When I left, I decided to create [Full-Build](https://full-build.io) to help D-Edge move faster engineering side. Full-Build is not much maintained (publicly speaking) but it lives under various names today (no more public). I've considered doing a public v2 as I'm not really satisfied with current state of affair.
+I learned about mono-repository (or at least unified view of mult-repositories) at [Criteo](https://criteo.com): that was the MOAB (Mother Of All Builds). When I left, I decided to create [full-build](https://full-build.io) to help D-Edge move faster engineering side. full-build is not much maintained (publicly speaking) but it lives under various names today (no more public). I've considered doing a public v2 as I'm not really satisfied with current state of affair.
 
 Anyway, there are several tools on the market:
 * [Bazel](https://bazel.build) (Google) / [Buckbuild](https://buck.build) (Meta): probably the top offer to consider but requires dedicated teams - does not really fit the startup/mid-company. Lack reuse of existing project metadata
