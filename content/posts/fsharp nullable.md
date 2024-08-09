@@ -128,7 +128,6 @@ type YamlParserException(msg:string, innerEx: Exception | null) =
         YamlParserException(msg, innerException)
         |> raise
 ```
-NOTE to self: investigate why this works in test project and not in PresqueYaml.
 
 `FsLexYacc` does not seem ready for nullable. Lots of errors there. Something to be contributed to probably.
 
