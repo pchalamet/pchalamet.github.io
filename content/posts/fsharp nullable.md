@@ -142,9 +142,11 @@ let s =
 // s is now non nullable string
 ```
 
+C# has a `?.` operator. Not a big deal probably considering F# pipelining capabilities. Null-coalescing would be welcome but probably can be solved with a custom function.
+
 ### The end
 I've just played a little bit with this new F# feature - I've barely scratched the surface. All in all, it's great and will enhance dramatically interop with C# and BCL. Regarding the last error I had, I clearly think days of option types are counted (and that's great, there are too many ways to express `null` state). This is why I think `| null` is not great and declaration site would have been better and easier to read (and more in line with C# practice). But ok, this brings F# in line with C# and BCL which is great. Again, eyes will adjust, take my words with a pinch of salt.
 
-For the future, I'd rather go with a big transparent unification of `Nullable<>` and `Option<>` with implicit `null` support (let say `<type>?`). I do not care about struct and reference difference when matching - I only care when designing types. I'm probably just tired of the schism between structs and references as this ought be handled gracefully by compilers.
+For the future, I'd rather go with a big transparent unification of `Nullable<>`, `Option<>` and `| null` with implicit `null` support (let say `<type>?`). I do not care about struct and reference difference when matching - I only care when designing types. I'm probably just tired of the schism between structs and references as this ought be handled gracefully by compilers.
 
 But hell yeah, congrats to F# team for bringing this long awaited feature !
