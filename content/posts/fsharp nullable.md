@@ -49,7 +49,7 @@ F# is type oriented - this does make sense nullability is baked at type declarat
 ### Test drive
 I have a bunch of projects where NRT would be interesting:
 - [PresqueYaml](https://github.com/MagnusOpera/PresqueYaml): a Yaml deserializer, with lot of Reflection usage
-- [Terrabuild](https://github.com/MagnusOpera/Terrabuild): a build tool for monorepo. It does use F# Compiler.Service and Reflection for scripts
+- [Terrabuild](https://github.com/MagnusOpera/Terrabuild): a build tool for monorepo. It does use F# Compiler.Service and Reflection for scripts and [FsLexYacc](https://fsprojects.github.io/FsLexYacc/)
 
 But before, I've setup a [test project](https://github.com/pchalamet/test-fs-null) to play with this feature. Check the `Makefile`.
 
@@ -123,6 +123,8 @@ type TerrabuildException(msg, innerException: Exception | null) =
     static member Raise(msg, ?innerException) =
         TerrabuildException(msg, innerException |> Option.defaultValue null) |> raise
 ```
+
+`FsLexYacc` does not seem ready for nullable. Lots of errors there. Something to be contributed to probably.
 
 #### Nullability Info Context
 I've not completely migrated PresqueYaml so not able to tell about this (PresqueYaml does support nullable context and is able to enforce it force C# define types). I will try to complete the migration and report my finding here for F# reference types.
