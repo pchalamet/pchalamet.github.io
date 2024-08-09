@@ -93,6 +93,8 @@ This is probably explained by [this remark in the RFC](https://github.com/fsharp
 
 All in all, pretty easy to enable NRT on this project. Note I choose the ugly path (i.e. use `nonNull`) and probably this ought be handled better than throwing NRE.
 
+**Changes** [Diff PR](https://github.com/MagnusOpera/PresqueYaml/pull/8/files)
+
 #### Terrabuild
 Terrabuild does use Reflection to bind parameters to script arguments - otherwise it's a full fledge F# project and I do not expect nullable errors to pop up but Reflection ones. 
 
