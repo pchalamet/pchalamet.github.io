@@ -144,7 +144,7 @@ let s =
 // s is now non nullable string
 ```
 
-C# has a `?.` operator but F# has not. Probably a problem considering F# pipelining capabilities. Null-coalescing would be welcome but probably can be solved with a custom function.
+C# has a `?.` operator but F# has not. Probably not a problem considering F# pipelining capabilities. Null-coalescing would be welcome but probably can be solved with a custom function.
 
 ### The end
 I've just played a little bit with this new F# feature - I've barely scratched the surface. All in all, it's great and will enhance dramatically interop with C# and BCL. Regarding the last error I had, I clearly think days of option types are counted (and that's great, there are too many ways to express `null` state). This is why I think `| null` is not great and declaration site would have been better and easier to read (and more in line with C# practice). But ok, this brings F# in line with C# and BCL which is great. Again, eyes will adjust, take my words with a pinch of salt.
