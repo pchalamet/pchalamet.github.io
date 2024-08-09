@@ -117,12 +117,18 @@ Error is not really obvious but here is the reason:\
 
 I fixed it by removing optional argument (moving from option to nullable):
 ```fsharp
-type TerrabuildException(msg, innerException: Exception | null) =
-    inherit Exception(msg, innerException)
+type YamlParserException(msg:string, innerEx: Exception | null) =
+    inherit Exception(msg, innerEx)
 
-    static member Raise(msg, ?innerException) =
-        TerrabuildException(msg, innerException |> Option.defaultValue null) |> raise
+    static member Raise(msg, ?innerEx: Exception) =
+        let innerException: Exception | null = 
+            match innerEx with
+            | None -> null
+            | Some ex -> ex
+        YamlParserException(msg, innerException)
+        |> raise
 ```
+NOTE to self: investigate why this works in test project and not in PresqueYaml.
 
 `FsLexYacc` does not seem ready for nullable. Lots of errors there. Something to be contributed to probably.
 
