@@ -19,7 +19,7 @@ Productivity comes from:
 
 Note this does not remove null references, you can probably easily inject null references on non-nullable values with little effort (deserialization, Reflection, ...). This only reduces cognitive load and focus design on what's matter.
 
-Now it's baked in F# - or will be backed as this is a preview, it's probably not completely ready but great step forward ! Let's try to compare implementation and usage against C#.
+Now it's baked in F# - or will be baked as this is a preview, it's probably not completely ready but great step forward ! Let's try to compare implementation and usage against C#.
 
 ### Declaration
 ```csharp
