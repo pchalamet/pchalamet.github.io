@@ -15,7 +15,7 @@ Productivity comes from:
 - data models are cleaner and safer (null is now explicit)
 - functions are explicit about `null` values
 - return values are explicit and `null` as specified
-- compiler nullability mismatches are caught at compile time (it's even better with <TreatWarningsAsErrors> on 😋)
+- compiler nullability mismatches are caught at compile time (it's even better with `<TreatWarningsAsErrors>` on 😋)
 
 Note this does not remove null references, you can probably easily inject null references on non-nullable values with little effort (deserialization, Reflection, ...). This only reduces cognitive load and focus design on what's matter.
 
