@@ -44,7 +44,7 @@ This is something you can't do in C#. Nullability is always defined at the bindi
 string (?name) = "toto";
 ```
 
-F# is type oriented - this does make sense nullability is baked at type declaration level and not at binding level. I think this sucks a little bit despite this can be seen as a value as well. Looks like reason is F# designers are trying to bring syntax closer to [RFC 1092](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1092-anonymous-type-tagged-unions.md) - but hell yeah, I feel it's weird to mix storage and type definition (I've always the feeling nullable is an access problem, not a type declaration one). Moreover, this definitively confusing with distriminated union declarations. I would have probably gone for anonymous nullable type only (with `<type>?` syntax - and less verbose as well). Time for eyes to adjust probably, but you have my point of view.
+F# is type oriented - this does make sense nullability is baked at type declaration level and not at binding level. I think this sucks a little bit despite this can be seen as a value as well. Looks like reason is F# designers are trying to bring syntax closer to [RFC 1092](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1092-anonymous-type-tagged-unions.md) - but hell yeah, I feel it's weird to mix storage and type definition (I've always the feeling nullable is an access problem, not a type declaration one). Moreover, this is definitively confusing with distriminated union declarations. I would have probably gone for anonymous nullable type only (with `<type>?` syntax - and less verbose as well). Time for eyes to adjust probably, but you have my point of view.
 
 ### Test drive
 I have a bunch of projects where NRT would be interesting:
