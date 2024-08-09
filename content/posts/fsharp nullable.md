@@ -6,7 +6,7 @@ draft: false
 
 After poking the F# team (thanks [Vlæd Zá](https://x.com/vzarytovskii) !), I was able to test the nullable feature support [RFC 1060](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1060-nullable-reference-types.md).
 
-Why is this a big deal for F# ? After all, we already have different tools to express this. FOr me, it's all about interop with the .net platform: C# and BCL. BCL has been annotated and it's incredibly useful in C#. It's also really great to help modeling and ensure your code is doing great - again in C#.
+Why is this a big deal for F# ? After all, we already have different tools to express this. For me, it's all about interop and alignment with the .net platform: C# and BCL. BCL has been annotated and it's incredibly useful in C#. It's also really great to help modeling and ensure your code is doing great - that is only in C#.
 
 ### Productivity
 Personnaly, this is something I was eargely waiting for. It's something that has been promised for years and unfortunately never completed. F# was lagging behind platform improvements to the point it was ridiculous to invest on - even decided F# was not worth the game anymore (with few exceptions for algorithmic stuffs). Having used C# and nullable extensively, it's a real productivity improvement and a real safety net for developers.
