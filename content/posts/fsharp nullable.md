@@ -6,7 +6,7 @@ draft: false
 
 After poking the F# team (thanks [Vlæd Zá](https://x.com/vzarytovskii) !), I was able to test the nullable feature support [RFC 1060](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1060-nullable-reference-types.md).
 
-Why is this a big deal for F# ? After all, we already have different tools to express this. For me, it's all about interop and alignment with the .net platform: C# and BCL. BCL has been annotated and it's incredibly useful in C#. It's also really great to help modeling and ensure your code is doing great - that is C# for the moment.
+Why is this a big deal for F# ? After all, we already have different tools to express this. For me, it's all about interop and alignment with the .net platform: C# and BCL. BCL has been annotated and it's incredibly useful in C#. It's also really great to help modeling and ensure your code is doing great.
 
 ### Productivity
 Personnaly, this is something I was eargely waiting for. It's something that has been promised for years and unfortunately never completed. F# was lagging behind platform improvements to the point it was ridiculous to invest on - even decided F# was not worth the game anymore (with few exceptions for algorithmic stuffs). Having used C# and nullable extensively, it's a real productivity improvement and a real safety net for developers.
@@ -17,9 +17,9 @@ Productivity comes from:
 - return values are explicit and `null` as specified
 - compiler nullability mismatches are caught at compile time (it's even better with <TreatWarningsAsErrors> on 😋)
 
-Note this does not remove null reference, you can probably easily inject null reference on non-nullable value with little effort (deserialization, Reflection, ...). It only reduces cognitive load and focus design on what's matter.
+Note this does not remove null references, you can probably easily inject null references on non-nullable values with little effort (deserialization, Reflection, ...). This only reduces cognitive load and focus design on what's matter.
 
-Now it's baked in F#, it's probably not completely ready but great step forward ! Let's try to compare implementation and usage against C#.
+Now it's baked in F# - or will be backed as this is a preview, it's probably not completely ready but great step forward ! Let's try to compare implementation and usage against C#.
 
 ### Declaration
 ```csharp
@@ -123,6 +123,9 @@ type TerrabuildException(msg, innerException: Exception | null) =
     static member Raise(msg, ?innerException) =
         TerrabuildException(msg, innerException |> Option.defaultValue null) |> raise
 ```
+
+#### Nullability Info Context
+I've not completely migrated PresqueYaml so not able to tell about this (PresqueYaml does support nullable context and is able to enforce it force C# define types). I will try to complete the migration and report my finding here for F# reference types.
 
 ### nonNull / if / match
 `nonNull` is pretty brutal and throws and NRE if `null`. That's pretty quick and dirty and probably enough for some situation. Not really useful in practice (as the consequence are same) - but better from a type system point of view. This also can act as a marker for unsafe null removal.
